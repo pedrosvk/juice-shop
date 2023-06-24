@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["cypress"],
     "baseUrl": "./",
     "outDir": "./build",
     "allowJs": true,
@@ -12,12 +13,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
-  "include" : [
+  "include": [
     "cypress/**/*.ts",
     "data/**/*.ts",
     "lib/**/*.ts",

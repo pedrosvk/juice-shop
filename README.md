@@ -39,20 +39,20 @@ For a detailed introduction, full list of features and architecture overview ple
 ## Table of contents
 
 - [Setup](#setup)
-    - [Deploy on Heroku (free ($0/month) dyno)](#deploy-on-heroku-free-0month-dyno)
-    - [From Sources](#from-sources)
-    - [Packaged Distributions](#packaged-distributions)
-    - [Docker Container](#docker-container)
-    - [Vagrant](#vagrant)
-    - [Amazon EC2 Instance](#amazon-ec2-instance)
-    - [Azure Container Instance](#azure-container-instance)
-    - [Google Compute Engine Instance](#google-compute-engine-instance)
-    - [Gitpod](#gitpod)
+  - [Deploy on Heroku (free ($0/month) dyno)](#deploy-on-heroku-free-0month-dyno)
+  - [From Sources](#from-sources)
+  - [Packaged Distributions](#packaged-distributions)
+  - [Docker Container](#docker-container)
+  - [Vagrant](#vagrant)
+  - [Amazon EC2 Instance](#amazon-ec2-instance)
+  - [Azure Container Instance](#azure-container-instance)
+  - [Google Compute Engine Instance](#google-compute-engine-instance)
+  - [Gitpod](#gitpod)
 - [Demo](#demo)
 - [Documentation](#documentation)
-    - [Node.js version compatibility](#nodejs-version-compatibility)
-    - [Troubleshooting](#troubleshooting)
-    - [Official companion guide](#official-companion-guide)
+  - [Node.js version compatibility](#nodejs-version-compatibility)
+  - [Troubleshooting](#troubleshooting)
+  - [Official companion guide](#official-companion-guide)
 - [Contributing](#contributing)
 - [References](#references)
 - [Merchandise](#merchandise)
@@ -116,10 +116,8 @@ For a detailed introduction, full list of features and architecture overview ple
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/bkimminich/juice-shop.svg)](https://hub.docker.com/r/bkimminich/juice-shop)
 ![Docker Stars](https://img.shields.io/docker/stars/bkimminich/juice-shop.svg)
-[![](https://images.microbadger.com/badges/image/bkimminich/juice-shop.svg)](https://microbadger.com/images/bkimminich/juice-shop
-"Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/bkimminich/juice-shop.svg)](https://microbadger.com/images/bkimminich/juice-shop
-"Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/bkimminich/juice-shop.svg)](https://microbadger.com/images/bkimminich/juice-shop 'Get your own image badge on microbadger.com')
+[![](https://images.microbadger.com/badges/version/bkimminich/juice-shop.svg)](https://microbadger.com/images/bkimminich/juice-shop 'Get your own version badge on microbadger.com')
 
 1. Install [Docker](https://www.docker.com)
 2. Run `docker pull bkimminich/juice-shop`
@@ -185,11 +183,11 @@ gcloud compute firewall-rules create juice-rule --allow tcp:3000
 4. Your container is now running and available at
    `http://<EXTERNAL_IP>:3000/`
 
-### Gitpod 
+### Gitpod
 
 1. Login to [gitpod.io](https://gitpod.io) and use <https://gitpod.io/#https://github.com/juice-shop/juice-shop/> to start a new workspace. If you want to spin up a forked repository, your URL needs to be adjusted accordingly.
 
-2. After the Gitpod workspace is loaded, Gitpod tasks is still running to install `npm install`  and launch the website. Despite Gitpod showing your workspace state already as _Running_, you need to wait until the installation process is done, before the website becomes accessable. The _Open Preview Window (Internal Browser)_, will open automatically and refresh itself automatically when the server has started.
+2. After the Gitpod workspace is loaded, Gitpod tasks is still running to install `npm install` and launch the website. Despite Gitpod showing your workspace state already as _Running_, you need to wait until the installation process is done, before the website becomes accessable. The _Open Preview Window (Internal Browser)_, will open automatically and refresh itself automatically when the server has started.
 
 3. Your Juice Shop instance is now also available at `https://3000-<GITPOD_WORKSPACE_ID>.<GITPOD_HOSTING_ZONE>.gitpod.io`.
 
@@ -198,8 +196,8 @@ gcloud compute firewall-rules create juice-rule --allow tcp:3000
 Feel free to have a look at the latest version of OWASP Juice Shop:
 <http://demo.owasp-juice.shop>
 
-> This is a deployment-test and sneak-peek instance only! You are __not
-> supposed__ to use this instance for your own hacking endeavours! No
+> This is a deployment-test and sneak-peek instance only! You are **not
+> supposed** to use this instance for your own hacking endeavours! No
 > guaranteed uptime! Guaranteed stern looks if you break it!
 
 ## Documentation
@@ -215,7 +213,7 @@ OWASP Juice Shop officially supports the following versions of
 offered accordingly.
 
 | node.js | Supported            | Tested             | [Packaged Distributions](#packaged-distributions) | [Docker images](#docker-container) from `master` | [Docker images](#docker-container) from `develop` |
-|:--------|:---------------------|:-------------------|:--------------------------------------------------|:-------------------------------------------------|:--------------------------------------------------|
+| :------ | :------------------- | :----------------- | :------------------------------------------------ | :----------------------------------------------- | :------------------------------------------------ |
 | 19.x    | :x:                  | :x:                |                                                   |                                                  |                                                   |
 | 18.x    | :heavy_check_mark:   | :heavy_check_mark: | Windows (`x64`), MacOS (`x64`), Linux (`x64`)     |                                                  |                                                   |
 | 17.x    | (:heavy_check_mark:) | :x:                |                                                   |                                                  |                                                   |
@@ -280,10 +278,10 @@ Add it to our ever-growing list of [REFERENCES.md](REFERENCES.md) by forking and
 
 ## Merchandise
 
-* On [Spreadshirt.com](http://shop.spreadshirt.com/juiceshop) and
+- On [Spreadshirt.com](http://shop.spreadshirt.com/juiceshop) and
   [Spreadshirt.de](http://shop.spreadshirt.de/juiceshop) you can get some swag (Shirts, Hoodies, Mugs) with the official
   OWASP Juice Shop logo
-* On
+- On
   [StickerYou.com](https://www.stickeryou.com/products/owasp-juice-shop/794)
   you can get variants of the OWASP Juice Shop logo as single stickers to decorate your laptop with. They can also print
   magnets, iron-ons, sticker sheets and temporary tattoos.
@@ -330,3 +328,18 @@ OWASP Juice Shop and any contributions are Copyright © by Bjoern Kimminich & th
 2014-2022.
 
 ![Juice Shop Logo](https://raw.githubusercontent.com/bkimminich/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_400px.png)
+
+npm install
+N
+npm start
+http://localhost:3000/#/
+npm install cypress --save-dev
+npm i npx
+npx cypress open
+
+.eslintrc.js
+rules: {
+'comma-dangle': [2, 'always-multiline'],
+}
+
+extends: ['standard-with-typescript', 'plugin:cypress/recommended'], // not working

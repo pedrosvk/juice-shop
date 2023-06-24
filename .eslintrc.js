@@ -4,29 +4,37 @@
  */
 
 module.exports = {
-  extends: 'standard-with-typescript',
+  extends: ['standard-with-typescript', 'plugin:cypress/recommended'],
   env: {
     browser: true,
     node: true,
     jasmine: true,
     mocha: true,
-    jest: true
+    jest: true,
   },
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
+    cy: true,
   },
   parserOptions: {
     ecmaVersion: 2018,
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   ignorePatterns: [
     'app/private/**',
     'vagrant/**',
     'frontend/**',
     'data/static/codefixes/**',
-    'dist/**'
+    'dist/**',
   ],
+  rules: {
+    'comma-dangle': [2, 'always-multiline'],
+    // semi: [1, 'always'],
+    // semi: 'off',
+    // '@typescript-eslint/semi': ['error'],
+    semi: ['error', 'always', { omitLastInOneLineBlock: false }],
+  },
   overrides: [
     {
       files: ['**/*.ts'],
@@ -39,8 +47,15 @@ module.exports = {
         '@typescript-eslint/restrict-plus-operands': 'off', // 250
         '@typescript-eslint/strict-boolean-expressions': 'off', // 337
         '@typescript-eslint/restrict-template-expressions': 'off', // 395
-        '@typescript-eslint/no-var-requires': 'off' // 509
-      }
-    }
-  ]
-}
+        '@typescript-eslint/no-var-requires': 'off', // 509
+        // '@typescript-eslint/semi': [2, 'always'],
+      },
+    },
+    // {
+    //   extends: 'standard',
+    //   rules: {
+    //     semi: [1, 'always'],
+    //   },
+    // },
+  ],
+};
